@@ -1,0 +1,15 @@
+{% load static %}
+<div class="col-lg-3">
+  <div class="cartn_entry">
+  <img class = "cartimg" src="{{ movie.poster.url }}" alt="Shape of water" height="338" width="225">
+  <br/><br/>
+  <h5>{{ movie.name }}</h5>
+  <h6>{{ movie.language }}</h6>
+  <!--<p>{{ cartoon.description }}</p>
+  <h4>genre:</h4> <h5>{{ cartoon.genre }}</h5>
+  <h6>{{ cartoon.Duration }}</h6>-->
+  <a href="{{ movie.download.url }}" download><button class="btn btn-primary">PLAY</button>
+  <br/><br/>
+  <a href="{{ movie.download.url }}" download><button class="btn btn-primary">DOWNLOAD</button>
+</div>
+</div>

@@ -1,0 +1,20 @@
+{% extends 'calen/base.html' %}
+{% block content %}
+<br>
+<div class="title container">
+  <h1>VINCORPORATED</h1>
+  <h4>One stop for your Entertainment</h4>
+  <hr>
+  <h2>Welcome to Movie section</h2>
+  <hr>
+</div>
+<div class="container">
+  <div class="cartoonrow row">
+   {% for movie in movies %}
+          {% include 'calen/_movie-entry.html' %}
+
+   {% endfor %}
+  </div>
+
+</div>
+{% endblock%}
